@@ -1,0 +1,265 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Marko One', cursive;
+    background-color: #b9d5de;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: transparent;
+    padding: 20px 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #FFB800;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Form Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+    transition: width 0.3s ease;
+    background-color: transparent;
+}
+
+#search-input:focus {
+    width: 250px;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.user-icon:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 20px; /* Added margin-top to prevent overlap with fixed navbar */
+    padding: 20px;
+}
+
+/* Check-in Section */
+.check-in {
+    background-color: rgba(0, 128, 128, 0.7); /* Transparent teal color */
+    border-radius: 25px;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.check-in h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.check-in p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.daily-checkins label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.checklist-actions {
+    margin-top: 20px;
+}
+
+.checklist-actions button {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Carousel styling */
+.selfcare-carousel {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-prev, .carousel-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    color: white;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; /* Ensures video stretches to full width */
+    min-height: 100%; /* Ensures video stretches to full height */
+    z-index: -1; /* Places the video behind all other content */
+    object-fit: cover; /* Ensures the video scales properly */
+    opacity: 0.7; /* Optional: Adjust opacity to make it blend better with the content */
+}

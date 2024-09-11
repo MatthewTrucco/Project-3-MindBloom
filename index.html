@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            <ul>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="self-help-tools.html">Self Help Tools</a></li>
+                <li><a href="online-therapy.html">Online Therapy</a></li>
+            </ul>
+            <div class="nav-icons">
+                <form id="search-form" class="search-container">
+                    <input type="text" id="search-input" placeholder="Search..." required>
+                    <button type="submit" class="search-button">
+                        <img src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt="Search" class="icon-img">
+                    </button>
+                </form>
+                <div class="slider-container">
+                    <div id="slider" class="slider">
+                        <span class="slider-text">Slide to Sign In</span>
+                        <div class="slider-handle">
+                            <span class="slider-arrow">➤</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="selfcare-profile.html">
+                    <button class="user-icon">
+                        <img src="images/user.png" alt="User" class="icon-img">
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Mental Health</h1>
+            <p id="hero-text">Taking care of your mental health is essential for a balanced life.</p>
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel-item active" data-hero-image="images/Welcom.png" data-hero-title="Welcome" data-hero-text="Taking care of your mental health is essential for a balanced life." data-button-color="#4F8C0C">
+                    <img src="images/larger pic welcome.png" alt="Welcome">
+                </div>
+                <div class="carousel-item" data-hero-image="images/mental health.png" data-hero-title="Mental Health" data-hero-text="Taking care of your mental health is essential for a balanced life." data-link="mental-health.html" data-button-color="#DB9807"> 
+                    <img src="images/lager pic - mental health.png" alt="Mental Health">
+                </div>
+                <div class="carousel-item" data-hero-image="images/Mindfulness.png" data-hero-title="Mindfulness" data-hero-text="Mindfulness helps you stay present and connected." data-link="mindfulness.html" data-button-color="#3B6C4A">
+                    <img src="images/larger pic.png mindfulness -_.png" alt="Mindfulness">
+                </div>
+                <div class="carousel-item" data-hero-image="images/Community.png" data-hero-title="Community" data-hero-text="Support from others strengthens resilience." data-link="community.html" data-button-color="#3935F4">
+                    <img src="images/larger pic - community.png" alt="Community">
+                </div>
+                <div class="carousel-item" data-hero-image="images/Program.png" data-hero-title="Programs" data-hero-text="Programs offer guidance and support." data-link="programs.html" data-button-color="#1CBCD3">
+                    <img src="images/larger pic - programs.png" alt="Programs">
+                </div>
+                <div class="carousel-item" data-hero-image="images/Self help Tools.png" data-hero-title="Self Help Tools" data-hero-text="Tools to assist in your journey." data-link="self-help-tools.html" data-button-color="#FF8901">
+                    <img src="images/larger pic - self care.png" alt="Self Help Tools">
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <span class="dot active" onclick="showSet(0)"></span>
+            <span class="dot" onclick="showSet(1)"></span>
+            <span class="dot" onclick="showSet(2)"></span>
+            <span class="dot" onclick="showSet(3)"></span>
+            <span class="dot" onclick="showSet(4)"></span>
+            <span class="dot" onclick="showSet(5)"></span>
+        </div>
+    </section>    
+
+    <section class="neurodiversity-section">
+        <div class="section-header">
+            <h2>Neurodiversity & Inclusion</h2>
+            <p>Emotions are highly underrated. Did you know that when it comes to decision making, emotion (system 1 thinking) precedes logic (system 2 thinking)? However, we need both emotion and logic for effective decision-making. When we are stressed our brains release cortisol which is toxic to the body and clouds thinking.</p>
+            <p>Features like our mood tracker or conflict log can make a world of difference when it comes to emotional self-regulation and distress tolerance. Growth is painful but personal development and self-awareness is how we can all thrive.</p>
+        </div>
+    
+        <div class="carousel-container-2">
+            <div class="carousel-2">
+                <!-- Carousel Items -->
+                <div class="carousel-item-2">
+                    <img src="images/Meditation.png" alt="Meditation">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Crisis.png" alt="Crisis">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/articles.png" alt="Articles">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Self Tools.png" alt="Self Help Tools & Activities">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Programs.png" alt="Programs">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Exercise.png" alt="Exercises">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Therapy.png" alt="Online Therapy">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Support.png" alt="Community Support">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Recent.png" alt="Recent">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Popular.png" alt="Popular">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+                <div class="carousel-item-2">
+                    <img src="images/Handicapable.png" alt="Handicapable">
+                    <a href="#" class="media-button-2"></a>
+                </div>
+            </div>
+            
+            <!-- Add navigation arrows -->
+            <div class="carousel-arrow-2 left">‹</div>
+            <div class="carousel-arrow-2 right">›</div>
+        </div>
+        
+    
+    <section class="learn-section">
+        <h3>Learn About Different Mental Health Conditions</h3>
+        <div class="learn-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-inner">
+                <p>Find out about mental health conditions such as anxiety, depression, PTSD, and more. Our database is constantly growing to help you understand these conditions and what you can do to manage them.</p>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+        <button class="learn-more">Are you a professional? Click here to apply for a mental health provider account.</button>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

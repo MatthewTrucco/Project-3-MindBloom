@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="selfcare-profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/turtle .mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Mental Health</a></li>
+            <li><a href="#">Mindfulness</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Self Help Tools</a></li>
+            <li><a href="#">Online Therapy</a></li>
+        </ul>
+        <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">🔍</button>
+            <button class="signin-button">Slide to Sign In</button>
+            <button class="profile-icon">👤</button>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <div class="check-in">
+            <h2>Welcome Back, Eritraya!</h2>
+            <p>You checked in 4 days in a row this week! You are an unstoppable force! Keep it going!</p>
+            <div class="daily-checkins">
+                <label><input type="checkbox"> Did you do something for yourself today?</label>
+                <label><input type="checkbox"> Completed your conflict log?</label>
+                <label><input type="checkbox"> Told yourself three positive things?</label>
+                <label><input type="checkbox"> Named three things you are grateful for?</label>
+                <label><input type="checkbox"> Exercised?</label>
+                <label><input type="checkbox"> Laughed?</label>
+            </div>
+            <div class="checklist-actions">
+                <button>Edit Checklist</button>
+                <button>Checklist Suggestions</button>
+                <button>Log</button>
+            </div>
+        </div>
+
+        <div class="selfcare-carousel">
+            <h2>Selfcare Carousel</h2>
+            <div class="carousel">
+                <button class="carousel-prev">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-items">
+                        <!-- Example carousel items -->
+                        <div class="carousel-item">
+                            <p>Sound Bath: Ocean waves & singing bowls</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Meditation: Calming guided session</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-next">❯</button>
+            </div>
+
+            <!-- Add New Item Form -->
+            <div class="add-carousel-item">
+                <h3>Add New Self-Care Item</h3>
+                <form id="addItemForm">
+                    <label for="contentTitle">Title or Video URL:</label>
+                    <input type="text" id="contentTitle" placeholder="Enter text or video URL" required>
+                    <br>
+                    <button type="submit">Add Item</button>
+                </form>
+            </div>
+
+            <!-- Remove Last Item Button -->
+            <div class="remove-carousel-item">
+                <h3>Remove Last Self-Care Item</h3>
+                <button id="removeLastItem">Remove Last Item</button>
+            </div>
+        </div>
+
+        <script src="profile.js"></script>
+    </div>
+
+</body>
+</html>
